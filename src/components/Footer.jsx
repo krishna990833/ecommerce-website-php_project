@@ -29,6 +29,7 @@ justify-content: center;
 background-color: ${props=>props.bg};
 align-items: center;
 cursor:pointer;
+${mobile({ flexDirection: "column" })}
 
 
 `;

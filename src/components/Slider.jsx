@@ -6,7 +6,7 @@ import {
 import React from "react";
 import styled from "styled-components";
 import { sliderItems } from "../data";
-import { mobile } from "../Responsive";
+import { mobile } from "../responsive";
 import { useState } from "react";
 const Container = styled.div`
   width: 100%;
@@ -39,7 +39,7 @@ const Wrapper = styled.div`
   height: 100%;
   display: flex;
   transition: all 1.5s ease;
-  transform: translateX(${props=>props.slideIndex*-100}vw);
+  transform: translateX(${(props) => props.slideIndex * -100}vw);
 `;
 
 const Slide = styled.div`
@@ -86,9 +86,9 @@ const Slider = () => {
 
   const handleClick = (side) => {
     if (side === "left") {
-        setSlideIndex(slideIndex>0?slideIndex-1:2)
-    }else{
-        setSlideIndex(slideIndex<2?slideIndex+1:0)
+      setSlideIndex(slideIndex > 0 ? slideIndex - 1 : 2);
+    } else {
+      setSlideIndex(slideIndex < 2 ? slideIndex + 1 : 0);
     }
   };
 

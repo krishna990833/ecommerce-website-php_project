@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { mobile } from "../Responsive";
+import { mobile } from "../responsive";
 const Container = styled.div`
   flex: 1;
   margin: 3px;
@@ -15,21 +15,15 @@ const Image = styled.img`
   ${mobile({ height: "20vh" })}
 `;
 const Title = styled.h1`
-color: white;
-margin: 20px;
-
-
-
+  color: white;
+  margin: 20px;
 `;
 const Button = styled.button`
-
-border:none;
-padding: 10px;
-background-color: white;
-color: black;
-cursor: pointer;
-
-
+  border: none;
+  padding: 10px;
+  background-color: white;
+  color: black;
+  cursor: pointer;
 `;
 const Info = styled.div`
   position: absolute;
